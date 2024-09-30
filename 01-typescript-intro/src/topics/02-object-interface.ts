@@ -1,19 +1,25 @@
-const skills: string[] = ['Bash', 'Counter', 'Healing'];
+
+const skills: string[] = ['Bash','Counter','Healing'];
+
 
 interface Character {
-    hometown?: string
-    hp: number
-    name: string
-    skills: string[]
+    name: string;
+    hp: number;
+    skills: string[];
+    hometown?: string;
 }
+
 
 const strider: Character = {
-    hp: 100,
     name: 'Strider',
+    hp: 100,
     skills: ['Bash', 'Counter'],
-}
+};
 
 
-strider.hometown = 'Rivendell'
+strider.hometown = 'Rivendell';
+
 
 console.table(strider)
+
+export {};
